@@ -1,8 +1,6 @@
--- Script that lists all shows and all genres
-SELECT tv_shows.title, tv_genres.name -- Query to join tables
-FROM tv_shows
-     LEFT JOIN tv_show_genres
-     	  ON tv_show_genres.show_id = tv_shows.id
-     LEFT JOIN tv_genres
-     	  ON tv_genres.id = tv_show_genres.genre_id
-ORDER BY tv_shows.title, tv_genres.name;
+-- listing show by genre
+SELECT ts.title, tg.name
+FROM tv_shows AS ts
+LEFT OUTER JOIN tv_show_genres AS tsg ON tsg.show_id = ts.id
+LEFT OUTER JOIN tv_genres AS tg ON tg.id = tsg.genre_id
+ORDER BY ts.title, tg.name ASC;

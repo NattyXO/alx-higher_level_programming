@@ -1,28 +1,13 @@
-# Almost a circle
-Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about unit testing, serialization, deserialization, JSON, `args` and `kwargs` in **Python**.
+``` models/
+base.py
+This file contains a class Base. It is the 'base' of all other classes in this project. Main goal is to manage id attribute to avoid code duplication.
 
-## Technologies
-* Python Scripts are written with Python 3.4.3
-* Tested on Ubuntu 20.04 LTS
+rectangle.py
+Contains the rectangle class that implements the base class.
+```
 
-## Files
+# square.py
+This file contains the a class Square that implements the class Rectangle.
 
-Inside `models` folder:
-
-| Filename | Description |
-| -------- | ----------- |
-| `__init__.py` | Script that converts the directory as a package |
-| `base.py` | Base class of geometrical instances |
-| `rectangle.py` | Class that inherits attributes references from `Base` class |
-| `square.py` | Class that inherits attributes references from `Square` class |
-
-Each class contains public/private attibutes, class and static methods. Also, these class raise exceptions when is required.
-
-Inside `tests/test_models` folder:
-
-| Filename | Description |
-| -------- | ----------- |
-| `__init__.py` | Script that converts the directory as a package |
-| `test_base.py` | Module that contains unittests to `Base` class |
-| `test_rectangle.py` | Module that contains unittests to `Rectangle` class |
-| `test_square.py` | Module that contains unittests to `Square` class |
+# init.py
+This makes the folder a python module.

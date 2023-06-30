@@ -1,1 +1,1 @@
-NAtty XO
+# JavaScript - Objects, Scopes and Closures
